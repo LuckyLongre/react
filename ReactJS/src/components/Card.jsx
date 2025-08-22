@@ -1,13 +1,25 @@
+// Card component - Displays information about a single series/show
+// The component accepts a 'data' prop through object destructuring
 export const Card = ({ data }) => {
+  // Destructure all required fields from the data object
+  // This makes our code cleaner and easier to read
   const { img_url, name, description, genre, cast, watch_url } = data;
-  let isAble = true;
-  const AGE = 20;
+
+  // Age verification logic for content access
+  let isAble = true;  // Flag to determine if user can access content
+  const AGE = 20;     // User's age (hardcoded for demo)
+  
+  // Simple age restriction check
+  // If user is under 18, they won't be able to access the watch URL
   if (AGE < 18) {
     isAble = false;
   }
+
+  // Event handler for the watch button click
+  // Prevents the default link behavior if user is not of age
   const handleLinkClick = (e) => {
     if (!isAble) {
-      e.preventDefault();
+      e.preventDefault();  // Stops the link from working if user is underage
     }
   };
   return (
