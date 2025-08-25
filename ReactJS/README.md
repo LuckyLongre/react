@@ -1,3 +1,14 @@
+## New Files & Topics (August 2025)
+
+- **src/projects/Todo/Todo.jsx**: Main Todo list component. Demonstrates state management, adding/removing tasks, and list rendering for the Todo mini-project.
+- **src/projects/Todo/ShowTask.jsx**: Displays individual todo items and handles task-specific actions for the Todo mini-project.
+- **src/projects/ToggleSwitch/ToggleSwitch.jsx**: Custom toggle switch component for interactive UI and state toggling.
+- **src/components/SeriesCards.jsx**: Renders a list of series/shows using Card components.
+- **src/components/Card.jsx**: Displays individual series/show details.
+- **src/api/apiData.json**: Mock API data for demonstrating data-driven UI.
+- **src/constants/user.js**: User data constants for examples and state.
+- **src/hooks/State.jsx**: Custom React hook for state management examples.
+
 
 # React Learning Journey
 
