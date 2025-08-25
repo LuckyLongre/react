@@ -1,3 +1,5 @@
+// Todo.jsx
+// Main Todo list component. Demonstrates state management, adding/removing tasks, and list rendering for the Todo mini-project.
 import { useState } from "react";
 import { MdAddBox } from "react-icons/md";
 import ShowTask from "./ShowTask";

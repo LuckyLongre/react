@@ -5,6 +5,54 @@ This project is a step-by-step guide through React concepts, from basics to adva
 
 ## Topics and Examples
 
+## Project Structure (Updated August 2025)
+
+```
+src/
+   App.css
+   App.jsx
+   DerivedState.jsx
+   LiftingStateUp.jsx
+   index.css
+   main.jsx
+   api/
+      apiData.json        # Mock API data for demonstration
+   assets/
+      react.svg           # React logo asset
+   components/
+      Card.jsx            # Card component for displaying series/show
+      SeriesCards.jsx     # Renders a list of Card components
+   constants/
+      user.js             # User data constants
+   hooks/
+      State.jsx           # Custom hook for state management
+   projects/
+      Todo/
+         ShowTask.jsx      # Displays individual todo tasks
+         Todo.jsx          # Main Todo list component
+      ToggleSwitch/
+         ToggleSwitch.jsx  # Custom toggle switch component
+```
+
+## New Features & Components (August 2025)
+
+- **Todo Project** (`src/projects/Todo/`)
+   - `Todo.jsx`: Main Todo list component. Demonstrates state management, adding/removing tasks, and list rendering.
+   - `ShowTask.jsx`: Displays individual todo items and handles task-specific actions.
+- **ToggleSwitch Project** (`src/projects/ToggleSwitch/ToggleSwitch.jsx`)
+   - Custom toggle switch component for interactive UI and state toggling.
+- **SeriesCards & Card Components** (`src/components/`)
+   - `SeriesCards.jsx`: Renders a list of series/shows using Card components.
+   - `Card.jsx`: Displays individual series/show details.
+- **apiData.json** (`src/api/`)
+   - Mock API data for demonstrating data-driven UI.
+- **user.js** (`src/constants/`)
+   - User data constants for examples and state.
+- **State.jsx** (`src/hooks/`)
+   - Custom React hook for state management examples.
+
+---
+
 ### 1. Basic State Management
 - **Basic useState Hook** 
   - Location: `src/hooks/State.jsx`
@@ -259,10 +307,11 @@ code --install-extension xabikos.javascriptsnippets
 code --install-extension ritwickdey.liveserver
 ```
 
+
 ## Keeping the README Updated
 Whenever you add new files or features:
 1. Update the **Project Structure** section to reflect new files/folders.
-2. Add a brief description of new features or components.
+2. Add a brief description of new features or components (see above for format).
 3. Note any changes in setup or usage instructions.
 
 This will help you (and others) quickly understand the current state of the project at any time.

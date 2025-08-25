@@ -1,3 +1,5 @@
+// ShowTask.jsx
+// Displays individual todo items and handles task-specific actions for the Todo mini-project.
 import { MdDelete, MdOutlineDoneAll } from "react-icons/md";
 
 const ShowTask = ({ task, handleDelete, handleComplete }) => {
